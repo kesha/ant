@@ -3,9 +3,8 @@
 FROM node:9
 #RUN npm config set proxy http://proxy:8080
 #RUN npm config set https-proxy http://proxy:8080
-RUN npm install antd-init -g
+#RUN npm install antd-init -g
 RUN mkdir /opt/antd-demo
 WORKDIR /opt/antd-demo
-RUN antd-init
 EXPOSE 8000
 CMD ["npm", "start"]
